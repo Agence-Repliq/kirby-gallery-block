@@ -1,9 +1,5 @@
-# Custom Image block for Kirby editor
-The main feature is to select the size of an image.
-
-![Screenshot of admin of an image](screenshot.jpg)
-
-
+# Custom Gallery block for Kirby editor
+Add little bit of customization and alt parameter directly in the block editor for each images.
 
 ## How to dev 
 **Install dependencies**</br>
