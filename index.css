@@ -1,0 +1,17 @@
+
+.k-block-type-gallery ul {
+	display: flex;
+    width: 100%;
+	line-height: 0;
+	cursor: pointer;
+}
+.k-block-type-gallery li {
+    flex: 0.75;
+}
+.k-block-type-gallery img {
+    width: 100%;
+    height: auto;
+}
+.k-block-type-gallery-placeholder {
+	background: var(--color-background);
+}
