@@ -58,18 +58,15 @@
     };
   }
   const _sfc_main = {
-    data() {
-      return {
-        file: null
-      };
-    },
     computed: {
+      layout() {
+        return this.content.layout;
+      },
       gallery() {
         const gallery2 = [];
         this.content.gallery.forEach((element, index) => {
           gallery2[index] = {
             "image": element.image[0],
-            "ratio": console.log(element.image[0]),
             "alt": element.alt,
             "caption": element.caption,
             "class": "",
@@ -82,11 +79,11 @@
   };
   var _sfc_render = function render() {
     var _vm = this, _c = _vm._self._c;
-    return _c("div", { staticClass: "k-block-type-gallery" }, [_c("ul", { on: { "click": _vm.open } }, [_vm.content.gallery.length ? _vm._l(_vm.gallery, function(item, index) {
+    return _c("div", { staticClass: "k-block-type-gallery" }, [_vm.content.gallery.length ? [_c("ul", { on: { "click": _vm.open } }, _vm._l(_vm.gallery, function(item, index) {
       return _c("li", { key: index, staticClass: "image-wrapper" }, [_c("img", { attrs: { "src": item.image.url, "alt": item.alt } })]);
-    }) : _vm._l(5, function(index) {
+    }), 0)] : [_c("ul", { on: { "click": _vm.open } }, _vm._l(5, function(index) {
       return _c("li", { key: index, staticClass: "k-block-type-gallery-placeholder" }, [_c("k-aspect-ratio", { attrs: { "ratio": _vm.ratio } })], 1);
-    })], 2), _vm.content.caption ? _c("figcaption", [_vm._v(" " + _vm._s(_vm.content.caption) + " ")]) : _vm._e()]);
+    }), 0)], _vm.content.caption ? _c("figcaption", [_vm._v(" " + _vm._s(_vm.content.caption) + " ")]) : _vm._e()], 2);
   };
   var _sfc_staticRenderFns = [];
   _sfc_render._withStripped = true;
@@ -100,9 +97,9 @@
     null,
     null
   );
-  __component__.options.__file = "/Users/baptistelhopitault/Documents/git/NAM/composer/plugins/kirby-gallery-block /src/components/gallery.vue";
+  __component__.options.__file = "/Users/baptistelhopitault/Documents/git/kirby-gallery-block/src/components/gallery.vue";
   const gallery = __component__.exports;
-  panel.plugin("baptiste/gallery-block", {
+  panel.plugin("repliq/gallery-block", {
     blocks: {
       gallery
     }

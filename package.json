@@ -1,7 +1,6 @@
 {
     "name": "kirby-gallery-block",
     "description": "Custom gallery block for Kirby CMS block editor",
-    "version": "1.0.1",
     "postcss": {},
 
     "scripts": {

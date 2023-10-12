@@ -4,7 +4,7 @@ preview: gallery
 fields:
   layout:
     type: toggles
-    label: Nombres d'image par ligne
+    label: field.blocks.gallery.layout.label
     width: 1/3
     options:
       - 2
@@ -16,18 +16,18 @@ fields:
     type: structure
     fields:
       image:
-        label: image
+        label: field.blocks.gallery.images.imagelabel
         type: files
         mutliples: false
         query: page.images
       alt:
-        label: field.blocks.image.alt
+        label: field.blocks.gallery.images.imagealt
         type: text
         icon: title
-        help: Texte permettant de comprendre l'image sans la voir. C'est pour le référencement et les personnes porteuses de handicaps.
+        help: field.blocks.gallery.images.imagealthelp
 
   caption:
-    label: field.blocks.image.caption
+    label: field.blocks.gallery.caption.label
     type: writer
     inline: true
     nodes: false
@@ -36,6 +36,6 @@ fields:
       - strike
       - link
     icon: text
-    help: S'affiche sous la photo
+    help: field.blocks.gallery.caption.help
     inline: true
     

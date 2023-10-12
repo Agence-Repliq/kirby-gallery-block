@@ -1,12 +1,12 @@
 {
-    "name": "baptiste/kirby-gallery-block",
+    "name": "agence-repliq/kirby-gallery-block",
     "description": "Custom gallery Block for Kirby CMS block editor",
     "type": "kirby-plugin",
     "license": "MIT",
     "config": {
         "optimize-autoloader": true
     },
-    "version": "1.0.1",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Baptiste lhopitault",
@@ -14,18 +14,18 @@
         }
     ],
     "extra": {
-        "installer-name": "kirby-image-block"
+        "installer-name": "kirby-gallery-block"
     },
     "support": {
-		"issues": "https://github.com/batgithub/kirby-block-block/issues",
-		"source": "https://github.com/batgithub/kirby-block-block"
+		"issues": "https://github.com/Agence-Repliq/kirby-gallery-block/issues",
+		"source": "https://github.com/Agence-Repliq/kirby-gallery-block"
 	},
     "keywords": [
         "kirby3",
+        "kirby",
         "kirby3-cms",
         "kirby3-plugin",
         "custom-block",
-        "block-file"
     ],
     "require": {
         "getkirby/composer-installer": "^1.1"

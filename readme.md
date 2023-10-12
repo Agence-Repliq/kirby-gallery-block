@@ -1,5 +1,9 @@
 # Custom Gallery block for Kirby editor
-Add little bit of customization and alt parameter directly in the block editor for each images.
+The idea is to provide alt text for each image from the block editor directly.
+
+![Screenshot of admin](screenshot.jpg)
+
+
 
 ## How to dev 
 **Install dependencies**</br>
