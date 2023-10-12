@@ -25,7 +25,7 @@
         "kirby",
         "kirby3-cms",
         "kirby3-plugin",
-        "custom-block",
+        "custom-block"
     ],
     "require": {
         "getkirby/composer-installer": "^1.1"
