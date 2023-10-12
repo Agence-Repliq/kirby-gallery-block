@@ -20,6 +20,7 @@ fields:
         type: files
         mutliples: false
         query: page.images
+        required: true
       alt:
         label: field.blocks.gallery.images.imagealt
         type: text
